@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "EatBoxesViewController.h"
+#import "ClearUpViewController.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) IBOutlet UIView *eatBoxes;
+@property (strong, nonatomic) IBOutlet UIView *clearBoxes;
+
 
 @end
 
@@ -17,8 +23,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
 }
+
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+   
+}
+
 
 - (void)didReceiveMemoryWarning
 {

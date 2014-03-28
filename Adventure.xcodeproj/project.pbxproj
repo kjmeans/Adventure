@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35788E0318E4EFC80001A0EE /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35788E0218E4EFC80001A0EE /* CheckMate.framework */; };
+		35788E0618E5B7FC0001A0EE /* EatBoxesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35788E0518E5B7FC0001A0EE /* EatBoxesViewController.m */; };
+		35788E0918E5B8180001A0EE /* ClearUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35788E0818E5B8180001A0EE /* ClearUpViewController.m */; };
 		35CA4EBA18D0A59B001DE04A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA4EB918D0A59B001DE04A /* Foundation.framework */; };
 		35CA4EBC18D0A59B001DE04A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA4EBB18D0A59B001DE04A /* CoreGraphics.framework */; };
 		35CA4EBE18D0A59B001DE04A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CA4EBD18D0A59B001DE04A /* UIKit.framework */; };
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35788E0218E4EFC80001A0EE /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CheckMate.framework; path = ../CheckMate.framework; sourceTree = "<group>"; };
+		35788E0418E5B7FC0001A0EE /* EatBoxesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EatBoxesViewController.h; sourceTree = "<group>"; };
+		35788E0518E5B7FC0001A0EE /* EatBoxesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EatBoxesViewController.m; sourceTree = "<group>"; };
+		35788E0718E5B8180001A0EE /* ClearUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearUpViewController.h; sourceTree = "<group>"; };
+		35788E0818E5B8180001A0EE /* ClearUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearUpViewController.m; sourceTree = "<group>"; };
 		35CA4EB618D0A59B001DE04A /* Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CA4EB918D0A59B001DE04A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		35CA4EBB18D0A59B001DE04A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35788E0318E4EFC80001A0EE /* CheckMate.framework in Frameworks */,
 				35CA4EBC18D0A59B001DE04A /* CoreGraphics.framework in Frameworks */,
 				35CA4EBE18D0A59B001DE04A /* UIKit.framework in Frameworks */,
 				35CA4EBA18D0A59B001DE04A /* Foundation.framework in Frameworks */,
@@ -101,6 +110,7 @@
 		35CA4EB818D0A59B001DE04A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				35788E0218E4EFC80001A0EE /* CheckMate.framework */,
 				35CA4EB918D0A59B001DE04A /* Foundation.framework */,
 				35CA4EBB18D0A59B001DE04A /* CoreGraphics.framework */,
 				35CA4EBD18D0A59B001DE04A /* UIKit.framework */,
@@ -115,6 +125,10 @@
 				35CA4EC818D0A59B001DE04A /* AppDelegate.h */,
 				35CA4EC918D0A59B001DE04A /* AppDelegate.m */,
 				35CA4ECB18D0A59B001DE04A /* Main.storyboard */,
+				35788E0718E5B8180001A0EE /* ClearUpViewController.h */,
+				35788E0818E5B8180001A0EE /* ClearUpViewController.m */,
+				35788E0418E5B7FC0001A0EE /* EatBoxesViewController.h */,
+				35788E0518E5B7FC0001A0EE /* EatBoxesViewController.m */,
 				35CA4ECE18D0A59B001DE04A /* ViewController.h */,
 				35CA4ECF18D0A59B001DE04A /* ViewController.m */,
 				35CA4ED118D0A59B001DE04A /* Images.xcassets */,
@@ -249,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35788E0918E5B8180001A0EE /* ClearUpViewController.m in Sources */,
 				35CA4ED018D0A59B001DE04A /* ViewController.m in Sources */,
+				35788E0618E5B7FC0001A0EE /* EatBoxesViewController.m in Sources */,
 				35CA4ECA18D0A59B001DE04A /* AppDelegate.m in Sources */,
 				35CA4EC618D0A59B001DE04A /* main.m in Sources */,
 			);
@@ -378,6 +394,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/kellemeans/Desktop/Treehouse/MMakers,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adventure/Adventure-Prefix.pch";
 				INFOPLIST_FILE = "Adventure/Adventure-Info.plist";
@@ -391,6 +411,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/kellemeans/Desktop/Treehouse/MMakers,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Adventure/Adventure-Prefix.pch";
 				INFOPLIST_FILE = "Adventure/Adventure-Info.plist";
@@ -460,6 +484,7 @@
 				35CA4EEA18D0A59B001DE04A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35CA4EEB18D0A59B001DE04A /* Build configuration list for PBXNativeTarget "AdventureTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +493,7 @@
 				35CA4EED18D0A59B001DE04A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
